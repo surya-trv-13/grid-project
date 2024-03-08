@@ -1,0 +1,23 @@
+<table id="table">
+  <thead>
+    <tr>
+      <th>Column 1</th>
+      <th>Column 2</th>
+      <th>Column 3</th>
+      <th>Column 4</th>
+      <th>Column 5</th>
+      <!-- Add more columns if needed -->
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Use ngFor to loop through your data and display rows -->
+    <tr *ngFor="let item of gridData">
+      <td>{{ item.col1 }}</td>
+      <td>{{ item.col2 }}</td>
+      <td>{{ item.col3 }}</td>
+      <td>{{ item.col4 }}</td>
+      <td>{{ item.col5 }}</td>
+      <!-- Add more columns if needed -->
+    </tr>
+  </tbody>
+</table>

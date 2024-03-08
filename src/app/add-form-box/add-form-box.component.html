@@ -1,0 +1,53 @@
+<div class="popup-overlay" *ngIf="showPopup">
+  <div class="popup-container">
+    <h2>Add row</h2>
+    <form (submit)="submitForm()">
+      <label for="name">Column 1:</label>
+      <input
+        type="text"
+        id="column1"
+        name="column1"
+        [(ngModel)]="formData.column1"
+        required
+      />
+      <label for="name">Column 2:</label>
+      <input
+        type="text"
+        id="column2"
+        name="column2"
+        [(ngModel)]="formData.column2"
+        required
+      />
+      <label for="name">Column 3:</label>
+      <input
+        type="text"
+        id="column3"
+        name="column3"
+        [(ngModel)]="formData.column3"
+        required
+      />
+      <label for="name">Column 4:</label>
+      <input
+        type="text"
+        id="column4"
+        name="column4"
+        [(ngModel)]="formData.column4"
+        required
+      />
+      <label for="name">Column 5:</label>
+      <input
+        type="text"
+        id="column5"
+        name="column5"
+        [(ngModel)]="formData.column5"
+        required
+      />
+      <div class="button-box">
+        <button class="formBtn submit" type="submit">Submit</button>
+        <button class="formBtn close" (click)="closePopup()">Close</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<button class="addBtn" (click)="openPopup()">+ Add New Row</button>

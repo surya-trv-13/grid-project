@@ -1,0 +1,18 @@
+.alphaKey {
+  border: 1px solid  #ddd;
+  color: white;
+  background-color: #FF407D;
+  padding: 13px;
+  margin: 10px 5px;
+}
+
+.alphaKey:hover {
+  border-color: #FF407D ;
+  color: #FF407D;
+  background-color: #fff;
+}
+
+.btnDiv {
+  width: calc(100% - 40px);
+  margin: 0 20px;
+}
